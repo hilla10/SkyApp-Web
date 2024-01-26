@@ -1,0 +1,36 @@
+.showcase {
+    background: url('../img/showcase.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem(430);
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    .content__wrapper {
+        margin: auto;
+        padding: rem(115) rem(20);
+        text-align: center;
+
+
+        .img__wrapper {
+            display: flex;
+            gap: rem(5);
+            justify-content: center;
+
+            @include breakpointDown(medium) {
+                flex-direction: column;
+            }
+
+            img {
+                max-height: rem(59);
+                width: 100%;
+                max-width: rem(222);
+            }
+        }
+    }
+
+}

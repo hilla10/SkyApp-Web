@@ -1,0 +1,38 @@
+.section-light {
+    background: $light-bg-color;
+
+    .grid__wrapper {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: rem(40) 0;
+
+        input {
+            display: block;
+            padding: rem(12);
+            margin-top: rem(-6);
+            border: 2px solid $btn-primary;
+            font-size: rem(18);
+            width: 80%;
+            opacity: 0.6;
+
+            @include breakpointDown (xsmall) {
+                font-size: rem(14);
+            }
+        }
+    }
+
+     @include breakpointDown(large) {
+         .justify-center {
+             justify-content: center;
+         }
+     }
+
+}

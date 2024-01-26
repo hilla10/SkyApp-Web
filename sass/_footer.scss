@@ -1,0 +1,29 @@
+.main-footer {
+    background: $footer-bg-color;
+    color: #fff;
+    border-top: rem(5) solid $secondary-bg-color;
+    margin-top: rem(-7);
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: rem(20);
+        padding: rem(20) 0;
+
+        @include breakpointDown(small) {
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            padding: rem(5) 0;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

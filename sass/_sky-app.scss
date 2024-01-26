@@ -1,0 +1,25 @@
+.sky-app {
+
+    .sky-app__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        gap: rem(30);
+        padding-top: rem(40);
+
+        h2 {
+            border-bottom: 1px solid #fff;
+            padding-bottom: rem(10);
+        }
+        img {
+            width: 70%;
+        }
+
+        .btn-default {
+            padding: rem(10) rem(20);
+            font-size: rem(18);
+        }
+    }
+}

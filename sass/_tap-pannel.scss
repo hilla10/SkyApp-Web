@@ -1,0 +1,62 @@
+.tab-container {
+    width: 100%;
+
+    .tab-header {
+        display: flex;
+        margin-left: rem(7);
+
+        .tab-button {
+            border: none;
+            background: none;
+            padding: rem(15) rem(20);
+            cursor: pointer;
+            margin-right: rem(3);
+            border-top-right-radius: rem(3);
+            border-top-left-radius: rem(3);
+            font-size: rem(15);
+            color: $primary-bg-color;
+
+            &:hover,
+            &:focus {
+                background-color: #eee !important;
+                color: #2a6496 !important;
+            }
+
+            &:focus {
+                outline: 1px dotted currentColor;
+                outline-offset: -4px;
+            }
+        }
+
+        .tab-button.active {
+            background: $primary-bg-color;
+            color: #fff;
+        }
+    }
+
+    .tab-content {
+        max-width: rem(360);
+        width: 100%;
+        margin-bottom: rem(30);
+
+        @include breakpointDown(large) {
+            max-width: 100%;
+        }
+
+        .tab-pane {
+            border-radius: rem(5);
+            padding: rem(20);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            transition-delay: 2s;
+        }
+
+        .tab-pane.active {
+            opacity: 1;
+            display: block;
+        }
+    }
+
+
+}

@@ -1,0 +1,34 @@
+.section-contact {
+    margin: rem(50) 0;
+
+    .contact_grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        gap: rem(30);
+
+        .page-header {
+            margin-bottom: rem(30);
+        }
+
+        .location__wrapper {
+
+            .location-list {
+                padding: rem(10) rem(40);
+
+                li:first-child {
+                    border-bottom: 1px solid #ccc;
+                    margin-bottom: rem(10);
+
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+
+                li {
+                    padding: rem(5) 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.team {
+    margin-top: rem(100);
+
+    .page-header {
+        border-bottom: rem(3) solid currentColor;
+        padding-bottom: rem(5);
+    }
+
+    .team__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        text-align: center;
+        gap: rem(30);
+        margin-bottom: rem(30);
+
+        img {
+            object-fit: cover;
+            transition: filter 0.3s ease-in-out;
+
+            &:hover {
+                filter:brightness(70%);
+            }
+        }
+
+        .team__card--grid {
+            padding: rem(15);
+            border: 1px solid #ccc;
+            .lg {
+                margin-top: 0;
+                margin-bottom: rem(10);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,33 @@
+// BreakPoints
+$breakpoints: (xsmall: rem(400),
+    small: rem(600),
+    medium: rem(768),
+    large: rem(992),
+    xlarge: rem(1200),
+);
+
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+@mixin breakpointDown($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-width: $breakpoint-value) {
+        @content;
+    }
+
+
+}
+
+@mixin breakpointDownH($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-height: $breakpoint-value) {
+        @content;
+    }
+}

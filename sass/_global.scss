@@ -1,0 +1,219 @@
+ *,
+ *::after,
+ *::before {
+     box-sizing: border-box;
+     margin: 0;
+ }
+
+
+ body {
+     font-family: "Segoe UI",
+         "Segoe WP",
+         "Segoe Regular",
+         sans-serif;
+     font-size: 15px;
+     line-height: 1.7em;
+     color: #666666;
+ }
+
+ ul,
+ ol {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+     color: #fff;
+ }
+ 
+ em {
+     font-size: rem(18);
+ }
+
+ img {
+     width: 100%;
+ }
+
+ iframe {
+    width: 100%;
+ }
+
+ .primary-color {
+     color: $primary-text-color;
+ }
+
+ .secondary-color {
+    color: $secondary-text-color;
+ }
+
+ .second-color {
+    color: $second-text-color;
+ }
+
+ .xl {
+     font-size: rem(36);
+
+     @include breakpointDown(medium) {
+         font-size: rem(32);
+     }
+ }
+
+ h4 {
+     font-size: rem(18);
+ }
+
+ .py-3 {
+     padding-top: rem(60);
+ }
+
+ .my-0 {
+     margin-bottom: 0;
+ }
+
+
+ .page-header {
+     font-size: rem(30);
+ }
+
+ .lg {
+     font-size: rem(24);
+     font-weight: 500;
+ }
+
+
+ .lead {
+     font-size: rem(21);
+     font-weight: 300;
+     line-height: 1.5;
+     margin-bottom: rem(15);
+
+     @include breakpointDown(medium) {
+         font-size: rem(16);
+     }
+ }
+
+
+ strong {
+     font-weight: 700;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+      margin: rem(15) 0;
+     line-height: 1.2;
+     font-weight: 500;
+ }
+
+
+ .bg-primary {
+     background: $primary-bg-color;
+     color: #fff;
+ }
+
+ .bg-secondary {
+     background: $secondary-bg-color;
+     color: #fff;
+ }
+
+ .bg-light {
+     background: $block-light-bg-color;
+     color: #666;
+ }
+
+ .bg-white {
+     background: #fff;
+ }
+
+ .fa-6 {
+     font-size: rem(40);
+ }
+
+ .fa-primary {
+     color: $primary-bg-color;
+ }
+
+ .fa-border {
+     width: 70px;
+     border: 1px solid $primary-bg-color;
+     border-radius: rem(5);
+     padding: rem(13) rem(15);
+ }
+
+ .btn {
+     cursor: pointer;
+     display: inline-block;
+     padding: rem(10) rem(16);
+     outline: none;
+     color: #fff;
+     font-size: rem(14);
+     text-align: center;
+     border-radius: rem(5);
+     margin: rem(10) 0;
+     font-weight: 300;
+     transition: background 300ms ease-in;
+
+     &:focus {
+         outline: 1px dotted currentColor;
+         outline-offset: -5px;
+     }
+ }
+
+ .btn-default {
+     background: $btn-default;
+     color: #333;
+     border: 1px solid #ccc;
+     padding: rem(6) rem(12);
+
+     &:hover {
+         background-color: #e6e6e6;
+         border-color: #adadad;
+     }
+ }
+
+ .btn-lg {
+     font-size: rem(18);
+ }
+
+ .btn-primary {
+     background: $btn-primary;
+     color: #fff;
+     border: 2px solid #fff;
+
+     &:hover {
+         background: $btn-primary-hover;
+     }
+ }
+
+ .border-bottom {
+    border-bottom: rem(2) solid $primary-bg-color !important;
+ }
+
+ .container {
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto;
+
+     @include breakpoint(medium) {
+         max-width: 750px;
+     }
+
+     @include breakpoint(large) {
+         max-width: 970px;
+     }
+
+     @include breakpoint(xlarge) {
+         max-width: 1170px;
+     }
+
+ }
+
+ .grid-column-1 {
+     @include breakpointDown(large) {
+         grid-template-columns: 1fr !important;
+     }
+ }

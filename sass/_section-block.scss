@@ -1,0 +1,17 @@
+.section-block {
+    border-bottom: rem(5) solid $secondary-bg-color;
+    padding: rem(35) 0;
+    margin-bottom: rem(30);
+
+    blockquote {
+        padding-right: rem(15);
+        padding-left: 0;
+        border-right: rem(4) solid #fff;
+        text-align: right;
+
+        h1 {
+            margin-bottom: rem(5);
+        }
+
+    }
+}
